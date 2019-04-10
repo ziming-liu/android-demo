@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    tools:context=".CheckBoxActivity">
+
+    <TextView
+        android:id="@+id/tv_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="你会那些移动开发？？"/>
+    <CheckBox
+        android:layout_below="@+id/tv_1"
+        android:id="@+id/cb_1"
+        android:text="android"
+        android:textColor="@color/colorAccent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <CheckBox
+        android:layout_below="@+id/cb_1"
+        android:id="@+id/cb_2"
+        android:text="ios"
+        android:textColor="@color/colorAccent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <CheckBox
+        android:layout_below="@+id/cb_2"
+        android:id="@+id/cb_3"
+        android:text="H5"
+        android:textColor="@color/colorAccent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <CheckBox
+        android:layout_below="@+id/cb_3"
+        android:id="@+id/cb_4"
+        android:text="other"
+        android:textColor="@color/colorAccent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_below="@id/cb_4"
+        android:padding="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_2"
+            android:text="你的兴趣???"
+            android:textSize="30sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <CheckBox
+            android:id="@+id/cb_5"
+            android:layout_below="@+id/tv_2"
+            android:text="cook"
+            android:textColor="@color/colorAccent"
+            android:button="@drawable/bg_checkbox"
+            android:textSize="50sp"
+            android:paddingLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <CheckBox
+            android:layout_below="@+id/cb_5"
+            android:id="@+id/cb_6"
+            android:text="music"
+            android:textSize="50sp"
+            android:textColor="@color/colorAccent"
+            android:paddingLeft="30dp"
+            android:button="@drawable/bg_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RadioButtonActivity">
+    <RadioGroup
+        android:id="@+id/rg_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/rb_1"
+            android:text="man"
+            android:textColor="@color/colorAccent"
+            android:textSize="36dp"
+            android:checked="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:id="@+id/rb_2"
+            android:text="woman"
+            android:textColor="@color/colorAccent"
+            android:textSize="36dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RadioGroup>
+    <RadioGroup
+        android:id="@+id/rg_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rg_1"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_3"
+            android:text="man"
+            android:gravity="center"
+            android:textColor="@color/colorAccent"
+            android:textSize="18dp"
+            android:button="@null"
+            android:background="@drawable/radiobutton"
+            android:layout_width="100dp"
+            android:layout_height="50dp" />
+        <RadioButton
+            android:id="@+id/rb_4"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:text="woman"
+            android:textColor="@color/colorAccent"
+            android:textSize="18dp"
+            android:button="@null"
+            android:background="@drawable/radiobutton"
+            android:layout_width="100dp"
+            android:layout_height="50dp" />
+    </RadioGroup>
+
+
+
+</RelativeLayout>
